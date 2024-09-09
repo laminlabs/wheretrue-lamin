@@ -10,6 +10,6 @@ def lint(session: nox.Session) -> None:
 
 @nox.session()
 def build(session):
-    run("uv pip install --system 'lamindb[jupyter,aws,bionty]' wetlab")
+    run(session, "uv pip install --system 'lamindb[jupyter,aws,bionty]' wetlab")
     run_notebooks("./docs")
-    run("lndocs --strict")
+    run(session, "lndocs --strict")
