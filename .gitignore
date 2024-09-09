@@ -106,3 +106,9 @@ docs/wheretrue_lamin.*
 lamin_sphinx
 docs/conf.py
 _docs_tmp*
+docs/run-scrnaseq
+
+# Nextflow scrnaseq run
+docs/.nextflow
+docs/output
+docs/work
